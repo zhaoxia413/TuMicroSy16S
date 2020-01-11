@@ -1,0 +1,17 @@
+knitr::opts_chunk$set(message = FALSE)
+library(HMP16SData)
+library(phyloseq)
+library(magrittr)
+library(ggplot2)
+library(tibble)
+library(dplyr)
+library(dendextend)
+library(circlize)
+library(curatedMetagenomicData)
+library(gridExtra)
+library(cowplot)
+library(readr)
+library(haven)
+V13() %>%
+  table_one() %>%
+  head()
